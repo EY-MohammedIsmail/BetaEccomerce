@@ -1,0 +1,12 @@
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\bin\Debug\net6.0\JwtConfig.deps.json
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\bin\Debug\net6.0\JwtConfig.dll
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\bin\Debug\net6.0\JwtConfig.pdb
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\JwtConfig.csproj.AssemblyReference.cache
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\JwtConfig.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\JwtConfig.AssemblyInfoInputs.cache
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\JwtConfig.AssemblyInfo.cs
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\JwtConfig.csproj.CoreCompileInputs.cache
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\JwtConfig.dll
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\refint\JwtConfig.dll
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\JwtConfig.pdb
+C:\Users\KD639SD\source\repos\MyEcommerce\JwtConfig\obj\Debug\net6.0\ref\JwtConfig.dll
