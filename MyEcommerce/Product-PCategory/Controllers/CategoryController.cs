@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Product_PCategory.Commands.CategoryCommands;
@@ -8,6 +9,7 @@ using Product_PCategory.Query.ProductCategoryQuerys;
 
 namespace Product_PCategory.Controllers
 {
+    [EnableCors("product")]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase

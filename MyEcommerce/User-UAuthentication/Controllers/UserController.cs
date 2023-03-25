@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
@@ -7,9 +8,10 @@ using User_UAuthentication.Query.UserQuery;
 
 namespace User_UAuthentication.Controllers
 {
+    [EnableCors("user")]
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -27,7 +29,7 @@ namespace User_UAuthentication.Controllers
         }
 
         [HttpGet]
-        [Route("getUserById")]
+        [Route("getUserById/{id}")]
         public async Task<IActionResult> GetUserById(int id)
         {
             var user = await _mediator.Send(new GetUserByIdQuery(id));

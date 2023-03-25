@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Product_PCategory.DataAccess;
 using Product_PCategory.Models;
+using Product_PCategory.Models.DTO;
 
 namespace Product_PCategory.Repository
 {
@@ -13,9 +14,15 @@ namespace Product_PCategory.Repository
             _context = context;
         }
 
-        public string AddNewProduct(Product product)
+        public string AddNewProduct(ProductRequestDto product)
         {
-            _context.Products.Add(product);
+            Product addProduct= new Product();
+            addProduct.Name=product.Name; 
+            addProduct.Description=product.Description;
+            addProduct.Price=product.Price;
+            addProduct.CategoryId=product.CategoryId;
+            
+            _context.Products.Add(addProduct);
             _context.SaveChanges();
             return "Added Succefully";
         }
@@ -42,10 +49,10 @@ namespace Product_PCategory.Repository
 
         public Product GetProductById(int id)
         {
-            return _context.Products.FirstOrDefault(p => p.ProductId == id);
+            return _context.Products.Include(x => x.Category).FirstOrDefault(p => p.ProductId == id);
         }
 
-        public string UpdateProduct(Product product)
+        public string UpdateProduct(ProductRequestDto product)
         {
             var getProductId = _context.Products.Find(product.ProductId);
             if (getProductId != null)

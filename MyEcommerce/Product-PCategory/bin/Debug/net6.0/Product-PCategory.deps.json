@@ -12,12 +12,14 @@
           "MediatR": "11.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.15",
+          "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": "3.6.0",
           "Microsoft.EntityFrameworkCore": "7.0.4",
           "Microsoft.EntityFrameworkCore.Design": "7.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.4",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
+          "Microsoft.Net.Compilers": "4.2.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -113,6 +115,14 @@
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "4.700.20.21406"
+          }
+        }
+      },
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/3.6.0": {
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {
+            "assemblyVersion": "3.6.0.0",
+            "fileVersion": "3.6.10708.0"
           }
         }
       },
@@ -465,6 +475,7 @@
           }
         }
       },
+      "Microsoft.Net.Compilers/4.2.0": {},
       "Microsoft.NETCore.Platforms/5.0.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.OpenApi/1.2.3": {
@@ -881,6 +892,13 @@
       "path": "microsoft.bcl.asyncinterfaces/1.1.1",
       "hashPath": "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512"
     },
+    "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/3.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wxo1vjgqJDawdtSBYegfe7fqUfdKn5vMtAMgHHxjV5rW9rSyQZMQ5t0YTCxyQ/IUyAOoUkrHMVXNLCdqAtH72w==",
+      "path": "microsoft.codedom.providers.dotnetcompilerplatform/3.6.0",
+      "hashPath": "microsoft.codedom.providers.dotnetcompilerplatform.3.6.0.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -1090,6 +1108,13 @@
       "sha512": "sha512-AAEHZvZyb597a+QJSmtxH3n2P1nIJGpZ4Q89GTenknRx6T6zyfzf592yW/jA5e8EHN4tNMjjXHQaYWEq5+L05w==",
       "path": "microsoft.identitymodel.tokens/6.21.0",
       "hashPath": "microsoft.identitymodel.tokens.6.21.0.nupkg.sha512"
+    },
+    "Microsoft.Net.Compilers/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NQf6pzuG4ur6iUoEykigwUPCbMpKoXrHnvP+ksYJtkbmV7tuMOgBa/4IVMseDao5Bm3g3IVc5GvdCjn78GVD5A==",
+      "path": "microsoft.net.compilers/4.2.0",
+      "hashPath": "microsoft.net.compilers.4.2.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",

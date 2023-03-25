@@ -1,4 +1,5 @@
 ﻿using Product_PCategory.Models;
+using Product_PCategory.Models.DTO;
 
 namespace Product_PCategory.DataAccess
 {
@@ -6,12 +7,12 @@ namespace Product_PCategory.DataAccess
     {
         public List<Product> getAllProducts();
 
-        public string AddNewProduct(Product product);
+        public string AddNewProduct(ProductRequestDto product);
 
         public string DeleteProduct(int id);
 
         public Product GetProductById(int id);
 
-        public string UpdateProduct(Product product);
+        public string UpdateProduct(ProductRequestDto product);
     }
 }

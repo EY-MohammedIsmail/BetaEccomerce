@@ -59,6 +59,15 @@ builder.Services.AddMediatR(typeof(AuthRepo).Assembly);
 //calling for configuring in middleware
 builder.Services.AddJwtConfiguration();
 
+//CORS implementation
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("user", builde =>
+    {
+        builde.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -69,6 +78,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+    
+
+app.UseCors("user");
 
 app.UseAuthentication();
 

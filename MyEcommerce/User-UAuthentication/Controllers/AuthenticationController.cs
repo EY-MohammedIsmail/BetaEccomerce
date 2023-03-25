@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using User_UAuthentication.Command.AuthCommands;
@@ -7,6 +8,7 @@ using User_UAuthentication.Models.DTO;
 
 namespace User_UAuthentication.Controllers
 {
+    [EnableCors("user")]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthenticationController : ControllerBase
